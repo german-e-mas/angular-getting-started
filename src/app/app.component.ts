@@ -20,6 +20,7 @@ const HEROES: Hero[] = [
   styleUrls: ['./app.component.css'],
   template: `
     <h1>{{title}}</h1>
+    <hero-detail [hero]="selectedHero"></hero-detail>
     <h2>My Heroes</h2>
     <ul class="heroes">
       <li *ngFor="let hero of heroes"
